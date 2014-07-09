@@ -1,0 +1,40 @@
+<script src="/Scripts/coin-slider/coin-slider.js"  type="text/javascript"></script>
+<script src="/Scripts/coin-slider/coin-slider.min.js"  type="text/javascript"></script>
+<link href="/Styles/coin-slider/coin-slider-styles.css" rel="stylesheet" />
+<script type="text/javascript">
+        $(function () {
+            $('#Home_Page_Slider').coinslider({
+                width: $(this).width(), height: 480,
+                spw: 1,
+                sph: 1,
+                delay: 8000, // delay between images in ms
+                sDelay: 100, // delay beetwen squares in ms
+                opacity: 1, // opacity of title and navigation
+                titleSpeed: 500, // speed of title appereance in ms
+                effect: 'straight', // random, swirl, rain, straight
+                navigation: true, // prev next and buttons
+                links: true,
+                hoverPause: true
+            });
+            /*To add css wiht navigation*/
+            $("#cs-buttons-Home_Page_Slider").css("left", "5%");
+            $("#cs-buttons-Home_Page_Slider").css("margin-top", "-5%");
+            $(".cs-prev").html("");
+            $(".cs-prev").addClass('nav-left');
+            $(".cs-prev").css('background-color','transparent');
+            $(".cs-next").css('background-color', 'transparent');
+            $(".cs-next").html("");
+            $(".cs-next").addClass('nav-right');
+        });
+
+    </script>
+    
+     <div id="Home_Page_Slider">
+        <asp:Repeater runat="server" ID="repeter" ItemType="WebApp.ComplexObj">
+            <ItemTemplate>
+                <a href="<%# Item.UrlToImage %>">
+                    <img src="<%# "/Images/"+ Item.Imagepath %>" style="background-repeat: no-repeat;" />
+                </a>
+            </ItemTemplate>
+        </asp:Repeater>
+    </div>
