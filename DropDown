@@ -1,0 +1,27 @@
+<style>
+
+
+</style>
+<script>
+
+  $(function () {
+            $("#Header_Nav ul li").hover(function () { $(this).children("ul").stop().fadeIn("slow"); },
+                                   function () { $(this).children("ul").stop().fadeOut("slow"); })
+        });
+        
+</script>
+
+
+
+          <div id="Header_Nav">
+                        
+                            <ul>
+                                <li><span><a href="/Link">Link</a></span>
+                                    <ul>
+                                        <li><span><a href="/SubLink1">SubLink1</a></span></li>
+                                        <li><span><a href="/SubLink2">SubLink2</a></span></li>
+                                        <li><span><a href="/SubLink3">SubLink3</a></span></li>
+                                    </ul>
+
+                                </li>
+                                </div>
