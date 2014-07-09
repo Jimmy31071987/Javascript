@@ -1,0 +1,25 @@
+  <div class="socialsharing topbottompadding">
+                    <a target="_blank" href="http://www.facebook.com/sharer.php?
+                    u=<%# (Request.Url.Scheme+"://"+Request.Url.Authority +"/toolbox/"+Server.HtmlEncode(Item.Url!=null?Item.Url.ToString().Trim().Replace(".",""):"")) %>&amp;t=<%# Item.Title %>">
+                        <img src="/Images/social/facebook.jpg"  />
+                    </a>
+                    <a target="_blank" href="http://twitter.com/home?status=<%# Item.Title %>+<%# (Request.Url.Scheme+"://"+Request.Url.Authority +"/toolbox/"+Server.HtmlEncode(Item.Url!=null?Item.Url.ToString().Trim().Replace(".",""):"")) %>">
+                        <img src="/Images/social/Twitter.jpg"/>
+                    </a> 
+                    <a target="_blank" href="http://digg.com/submit?url=<%# Request.Url.Scheme+"://"+Request.Url.Authority +"/toolbox/"+Server.HtmlEncode(Item.Url!=null?Item.Url.ToString().Trim().Replace(".",""):"") %>&title=<%# Item.Title %>">
+                        <img src="/Images/social/digg.jpg" />
+                    </a> 
+                    <a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=<%# Request.Url.Scheme+"://"+Request.Url.Authority +"/toolbox/"+Server.HtmlEncode(Item.Url!=null?Item.Url.ToString().Trim().Replace(".",""):"") %>&title=<%# Item.Title %>&source=<%# Request.Url.Scheme+"://"+Request.Url.Authority +"/toolbox/"+Server.HtmlEncode(Item.Url!=null?Item.Url.ToString().Trim().Replace(".",""):"") %>">
+                        <img src="/Images/social/linkedIn.jpg"/>
+                    </a> 
+                    <a target="_blank" href="http://www.stumbleupon.com/submit?url=<%# Request.Url.Scheme+"://"+Request.Url.Authority +"/toolbox/"+Server.HtmlEncode(Item.Url!=null?Item.Url.ToString().Trim().Replace(".",""):"") %>&title=<%# Item.Title %>">
+                        <img src="/Images/social/stumble.jpg"/>
+                    </a> 
+                    <a target="_blank" href="https://pinterest.com/pin/create/bookmarklet/?media=<%# Request.Url.Scheme+"://"+Request.Url.Authority +"/"+"/Resources/Knowledge/Toolbox/"+Item.knowledgeId+"/"+Item.ImageDirPath %>&url=<%# Request.Url.Scheme+"://"+Request.Url.Authority +"/toolbox/"+Server.HtmlEncode(Item.Url!=null?Item.Url.ToString().Trim().Replace(".",""):"") %>&description=<%# Item.Title+"/" %>">
+                        <img src="/Images/social/pininterest.jpg"/>
+                    </a> 
+                    <a target="_blank" href="https://plus.google.com/share?url=<%# Request.Url.Scheme+"://"+Request.Url.Authority +"/toolbox/"+Server.HtmlEncode(Item.Url!=null?Item.Url.ToString().Trim().Replace(".",""):"") %>">
+                        <img src="/Images/social/googleplus.jpg"/>
+                    </a> 
+
+                </div> 
