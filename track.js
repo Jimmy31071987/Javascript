@@ -20,3 +20,5 @@ AJAX = function () {
           return $.ajax({ url: url, type: 'post', data: data, async: true, processData: false, contentType: false });
        }
 }
+
+
