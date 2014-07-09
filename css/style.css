@@ -1,0 +1,70 @@
+#Header_Nav {
+width: 820px;
+}
+
+#Header_Nav ul {
+list-style-type: none;
+}
+
+#Header_Nav ul li {
+float: left;
+margin-right: 2.5%;
+}
+
+#Header_Nav ul li a {
+text-transform: uppercase;
+font-size: 12px;
+font-family: 'Open Sans',sans-serif;
+font-weight: 600;
+text-decoration: none;
+color: #949494;
+}
+
+#Header_Nav ul li a:active {
+color: #8bc33b;
+}
+
+#Header_Nav ul li ul {
+display: none;
+visibility: hidden;
+}
+
+#Header_Nav ul li:hover ul {
+z-index: 98;
+border: 0px solid #949494;
+padding-top: 10px;
+list-style-type: none;
+padding: 0px;
+margin: 0px;
+box-shadow: #949494 0px 0px 0.5px 0.5px;
+display: block;
+visibility: visible;
+position: absolute;
+background-color: #ffffff;
+border-radius: 10px;
+}
+
+#Header_Nav ul li:hover a {
+color: #96CA4C;
+}
+
+#Header_Nav ul li:hover ul li {
+float: none;
+text-align: left;
+position: relative;
+margin: 0;
+left: 0;
+border: none;
+padding: 5px 20px 5px 10px;
+}
+
+#Header_Nav ul li:hover ul li a {
+text-decoration: none;
+text-align: left;
+color: #949494;
+text-transform: capitalize;
+}
+
+#Header_Nav ul li:hover ul li:hover a {
+color: #96CA4C;
+}
