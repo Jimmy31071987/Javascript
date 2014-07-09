@@ -7,4 +7,6 @@
                         fjs.parentNode.insertBefore(js, fjs);}
                         (document, 'script', 'facebook-jssdk'));
             </script>
-            <div class="fb-like-box" data-href="https://www.facebook.com/CornerStoneDynamics" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+            <div class="fb-like-box" data-href="https://www.facebook.com/groups/686482251425455/" 
+            data-colorscheme="light" 
+            data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
