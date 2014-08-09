@@ -1,0 +1,18 @@
+<script type="text/javascript">
+ function showpreview(input) {
+
+        if (input.files && input.files[0]) {
+
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#Ipreview').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+
+    }
+</script>
+
+  <asp:Image runat="server" ID="Ipreview" AlternateText="Team Member Icon" ClientIDMode="Static" />
+  <asp:FileUpload runat="server" ID="Fupload" CssClass="std-textbox" onchange="showpreview(this);"/>
+         
